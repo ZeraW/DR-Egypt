@@ -7,13 +7,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".DrEgyptApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:name=".DrEgyptApp">
+        android:theme="@style/AppTheme">
 
         <!-- Activities -->
         <activity
@@ -35,6 +35,7 @@
 
         <!-- Receivers -->
 
+        <activity android:name=".ui.activities.DetailsActivity"></activity>
     </application>
 
 </manifest>

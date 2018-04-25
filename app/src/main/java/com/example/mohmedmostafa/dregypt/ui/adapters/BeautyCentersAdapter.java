@@ -9,8 +9,13 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.AddBeautyCenterToFavouriteRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.DeleteBeautyCenterFromFavouriteRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.RatingBeautyCenterRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.ViewsIncrementForBeautyCenterRequest;
 import com.example.mohmedmostafa.dregypt.R;
 
 import java.util.ArrayList;
@@ -41,10 +46,42 @@ import java.util.ArrayList;
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
+    public void onBindViewHolder(final MyViewHolder holder, int position) {
+        // TODO set TextViews here
+        String name="";
+        holder.nameTextView.setText(name);
+
+        String details="";
+        holder.detailsTextView.setText(details);
+
+        holder.favImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(holder.fav){
+                    //TODO ues AddTOFavouriteRequest
+                }else {
+                    //TODO ues DeleteFromFavouriteRequest
+                }
+
+            }
+        });
+
+        holder.ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
+                //TODO ues RatingRequest
+            }
+        });
+
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO ues ViewsRequest
+            }
+        });
 
 
-        //setAnimation(holder.cardView,position);
+        setAnimation(holder.cardView,position);
     }
 
 
@@ -57,12 +94,23 @@ import java.util.ArrayList;
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        TextView textView;
-        ImageView imageView;
+        TextView nameTextView;
+        TextView detailsTextView;
+        ImageView coverImageView;
+        ImageView favImageView;
+        RatingBar ratingBar;
+        boolean fav;
+
         CardView cardView;
+
         public MyViewHolder(View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
+            nameTextView=(TextView)itemView.findViewById(R.id.text_name);
+            detailsTextView=(TextView)itemView.findViewById(R.id.text_details);
+            ratingBar=(RatingBar)itemView.findViewById(R.id.ratingBar);
+            coverImageView=(ImageView)itemView.findViewById(R.id.img);
+            favImageView=(ImageView)itemView.findViewById(R.id.fav_img);
         }
 
         @Override
@@ -99,6 +147,19 @@ import java.util.ArrayList;
         super.onViewDetachedFromWindow(holder);
         holder.clearAnimation();
     }
+
+
+    /************************* favourite requests ******************************/
+     AddBeautyCenterToFavouriteRequest addBeautyCenterToFavouriteRequest;
+     DeleteBeautyCenterFromFavouriteRequest deleteBeautyCenterFromFavouriteRequest;
+
+
+     /************************* rating requests ******************************/
+     RatingBeautyCenterRequest ratingBeautyCenterRequest;
+
+
+     /************************* views requests ******************************/
+     ViewsIncrementForBeautyCenterRequest viewsIncrementForBeautyCenterRequest;
 
 
 
