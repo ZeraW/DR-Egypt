@@ -1,0 +1,34 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33b5e5" >
+
+        <ImageView
+            android:id="@+id/close_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:contentDescription="@string/closebutton"
+            android:padding="5dp"
+            android:src="@drawable/close"
+            />
+
+        <FrameLayout
+            android:id="@+id/frameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/close_activity" />
+
+    </RelativeLayout>
+
+</ScrollView>

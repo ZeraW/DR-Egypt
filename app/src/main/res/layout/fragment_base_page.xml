@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3.5"
+        >
+
+    </LinearLayout>
+
+
+    <!-- or -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:weightSum="10"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="4"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Or"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="4"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="4.5"
+        >
+
+        <Button
+            android:id="@+id/BPSignInWithEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="93dp"
+            android:background="@android:color/holo_red_light"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="18dp"
+            android:text="Sign In with Email"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="left|center"
+            android:paddingLeft="45dp"
+            />
+
+        <TextView
+            android:id="@+id/BPcreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/newUser"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
