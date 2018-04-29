@@ -1,4 +1,4 @@
-package com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests;
+package com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.CosmeticClinicsRequests;
 
 import android.content.Context;
 
@@ -11,18 +11,18 @@ import com.example.mohmedmostafa.dregypt.utils.Constants;
  * Created by mohmed mostafa on 23/04/2018.
  */
 
-public class GetBeautyCentersRequest {
+public class GetCosmeticClinicsRequest {
 
     VolleyLIbUtils volleyLIbUtils;
     String url;
     int methodId;
 
-    public GetBeautyCentersRequest(Context context, Response.Listener<String> listener, Response.ErrorListener errorListener){
+    public GetCosmeticClinicsRequest(Context context, Response.Listener<String> listener, Response.ErrorListener errorListener){
         setValues();
         volleyLIbUtils=new VolleyLIbUtils(context,methodId,url,listener,errorListener);
     }
     private void setValues(){
-        url= Constants.basicUrl+"/beauty-centers";
+        url= Constants.basicUrl+"/cosmetic-clinics";
         methodId= Request.Method.GET;
     }
 

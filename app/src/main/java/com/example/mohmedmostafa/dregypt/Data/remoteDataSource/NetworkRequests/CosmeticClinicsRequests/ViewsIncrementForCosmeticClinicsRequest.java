@@ -1,4 +1,4 @@
-package com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests;
+package com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.CosmeticClinicsRequests;
 
 import android.content.Context;
 
@@ -13,19 +13,19 @@ import java.util.HashMap;
  * Created by mohmed mostafa on 23/04/2018.
  */
 
-public class DeleteBeautyCenterFromFavouriteRequest {
+public class ViewsIncrementForCosmeticClinicsRequest {
 
     VolleyLIbUtils volleyLIbUtils;
     String url;
     int methodId;
 
-    public DeleteBeautyCenterFromFavouriteRequest(Context context, int user_id, int id, Response.Listener<String> listener, Response.ErrorListener errorListener){
+    public ViewsIncrementForCosmeticClinicsRequest(Context context, int user_id, int id, Response.Listener<String> listener, Response.ErrorListener errorListener){
         setValues(user_id , id);
         volleyLIbUtils=new VolleyLIbUtils(context,methodId,url,listener,errorListener);
     }
     private void setValues(int user_id,int id){
-        url= Constants.basicUrl+"/beauty-centers/"+id+"/users/"+user_id+"/fav";
-        methodId= Request.Method.DELETE;
+        url= Constants.basicUrl+"/cosmetic-clinics/"+id+"/users/"+user_id+"/view";
+        methodId= Request.Method.POST;
     }
 
     public void setBody(HashMap body){

@@ -12,10 +12,10 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.AddBeautyCenterToFavouriteRequest;
-import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.DeleteBeautyCenterFromFavouriteRequest;
-import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.RatingBeautyCenterRequest;
-import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.BeautyCenterRequests.ViewsIncrementForBeautyCenterRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.CosmeticClinicsRequests.AddCosmeticClinicsToFavouriteRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.CosmeticClinicsRequests.DeleteCosmeticClinicsFromFavouriteRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.CosmeticClinicsRequests.RatingCosmeticClinicsRequest;
+import com.example.mohmedmostafa.dregypt.Data.remoteDataSource.NetworkRequests.CosmeticClinicsRequests.ViewsIncrementForCosmeticClinicsRequest;
 import com.example.mohmedmostafa.dregypt.R;
 
 import java.util.ArrayList;
@@ -150,16 +150,16 @@ import java.util.ArrayList;
 
 
     /************************* favourite requests ******************************/
-     AddBeautyCenterToFavouriteRequest addBeautyCenterToFavouriteRequest;
-     DeleteBeautyCenterFromFavouriteRequest deleteBeautyCenterFromFavouriteRequest;
+     AddCosmeticClinicsToFavouriteRequest addBeautyCenterToFavouriteRequest;
+     DeleteCosmeticClinicsFromFavouriteRequest deleteBeautyCenterFromFavouriteRequest;
 
 
      /************************* rating requests ******************************/
-     RatingBeautyCenterRequest ratingBeautyCenterRequest;
+     RatingCosmeticClinicsRequest ratingBeautyCenterRequest;
 
 
      /************************* views requests ******************************/
-     ViewsIncrementForBeautyCenterRequest viewsIncrementForBeautyCenterRequest;
+     ViewsIncrementForCosmeticClinicsRequest viewsIncrementForBeautyCenterRequest;
 
 
 
