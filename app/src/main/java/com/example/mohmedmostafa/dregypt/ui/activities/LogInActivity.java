@@ -1,16 +1,14 @@
 package com.example.mohmedmostafa.dregypt.ui.activities;
 
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 
 import com.example.mohmedmostafa.dregypt.R;
-import com.example.mohmedmostafa.dregypt.ui.fragments.BasePage;
-import com.example.mohmedmostafa.dregypt.ui.fragments.Login_Fragment;
+import com.example.mohmedmostafa.dregypt.ui.fragments.LoginFragments.BasePage;
+import com.example.mohmedmostafa.dregypt.ui.fragments.LoginFragments.Login_Fragment;
 import com.example.mohmedmostafa.dregypt.utils.Utils;
 
 

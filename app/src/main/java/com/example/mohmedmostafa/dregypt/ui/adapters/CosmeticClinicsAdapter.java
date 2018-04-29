@@ -20,7 +20,7 @@ import com.example.mohmedmostafa.dregypt.R;
 
 import java.util.ArrayList;
 
- public class BeautyCentersAdapter extends RecyclerView.Adapter<BeautyCentersAdapter.MyViewHolder>  {
+ public class CosmeticClinicsAdapter extends RecyclerView.Adapter<CosmeticClinicsAdapter.MyViewHolder>  {
     final String basicImgUrl="http://gms-sms.com:89";
      ArrayList  arrayList;
     Context context;
@@ -28,8 +28,8 @@ import java.util.ArrayList;
     RecyclerViewClickListener ClickListener ;
 
 
-    public BeautyCentersAdapter(){}
-    public BeautyCentersAdapter(ArrayList arrayList, Context context){
+    public CosmeticClinicsAdapter(){}
+    public CosmeticClinicsAdapter(ArrayList arrayList, Context context){
         this.arrayList =new ArrayList();
         this.arrayList = arrayList;
         this.context=context;

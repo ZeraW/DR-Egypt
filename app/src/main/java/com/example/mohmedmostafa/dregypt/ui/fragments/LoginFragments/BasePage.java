@@ -1,4 +1,4 @@
-package com.example.mohmedmostafa.dregypt.ui.fragments;
+package com.example.mohmedmostafa.dregypt.ui.fragments.LoginFragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

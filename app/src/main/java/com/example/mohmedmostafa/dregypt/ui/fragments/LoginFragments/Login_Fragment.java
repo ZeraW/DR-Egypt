@@ -1,4 +1,4 @@
-package com.example.mohmedmostafa.dregypt.ui.fragments;
+package com.example.mohmedmostafa.dregypt.ui.fragments.LoginFragments;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
