@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                Intent i = new Intent(MainActivity.this,LogInActivity.class);
+                Intent i = new Intent(MainActivity.this,ProductsActivity.class);
+                //LogInActivity
                 startActivity(i);
             }
         });
@@ -63,11 +64,18 @@ public class MainActivity extends AppCompatActivity
        /* GetHospitalsRequest getHospitalsRequest=new GetHospitalsRequest(this,this,this);
         getHospitalsRequest.start();*/
 
-        AddHospitalToFavouriteRequest addHospitalToFavouriteRequest=new AddHospitalToFavouriteRequest(this,3,3,this,this);
+        AddHospitalToFavouriteRequest addHospitalToFavouriteRequest=new AddHospitalToFavouriteRequest(this, 3, 3, listener, this);
         addHospitalToFavouriteRequest.setBody(new HashMap());
         addHospitalToFavouriteRequest.start();
 
     }
+
+     Response.Listener listener=new Response.Listener() {
+         @Override
+         public void onResponse(Object response) {
+
+         }
+     };
 
     @Override
     public void onBackPressed() {

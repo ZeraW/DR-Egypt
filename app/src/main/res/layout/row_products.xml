@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Products_cardView"
+    android:layout_width="100dp"
+    android:layout_height="180dp"
+    android:layout_margin="5dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/Products_Img"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/Products_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/Products_Img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Dove"
+            android:textColor="@color/black"
+
+            />
+
+
+        <TextView
+            android:id="@+id/Products_Price"
+            android:layout_width="36.5dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Products_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:padding="1dp"
+            android:text="5$"
+            android:layout_marginRight="2dp"
+            android:textSize="12sp"
+            />
+
+
+        <TextView
+            android:id="@+id/Products_Status"
+            android:layout_width="39.5dp"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Products_title"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/Products_Price"
+            android:layout_toRightOf="@id/Products_Price"
+            android:background="@drawable/shape_rounded_corner"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="New"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/Products_More_Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Products_Status"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="bottom"
+            android:padding="2dp"
+            android:text="@string/More_Details"
+            android:textColor="@color/bluoo"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

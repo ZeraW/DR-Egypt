@@ -27,4 +27,20 @@
         <item name="android:layout_marginTop">4dp</item>
         </style>
 
+        <style name="FacebookLoginBssutton">
+        <item name="android:minHeight">55dip</item>
+        <item name="android:maxHeight">55dip</item>
+        <item name="android:minWidth">55dip</item>
+        <item name="android:maxWidth">55dip</item>
+        </style>
+
+
+        <style name="FacebookLoginButton">
+            <item name="android:textSize">15sp</item>
+            <item name="android:layout_marginTop">10dp</item>
+            <item name="android:layout_marginBottom">10dp</item>
+        </style>
+
+
+
 </resources>
